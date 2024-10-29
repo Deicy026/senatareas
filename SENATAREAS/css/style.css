@@ -1,0 +1,113 @@
+:root {
+  --color-principal: #10d1f3; /* Azul */
+  --color-secundario: #e2fa06; /* Amarillo */
+  --color-fondo: #eee6eb; /* Blanco suave */
+  --tipografia-principal: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--tipografia-principal);
+  background-color: var(--color-fondo);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-principal);
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: aquamarine;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, var(--color-principal), var(--color-secundario));
+  padding: 50px;
+  text-align: center;
+  color: #f4faf9;
+}
+
+.hero img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.login, .form_registro {
+  background-color: #1f9494;
+  padding: 20px;
+  border: 3px solid #4f0bec;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(13, 238, 99, 0.1);
+}
+
+.login_logo img, .form_registro img {
+  width: 50px;
+  height: 50px;
+}
+
+.form_login fieldset {
+  border: none;
+}
+
+.form_login label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_login input[type="text"], .form_login input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dfc4c4;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  background-color: var(--color-principal);
+  color: #310ef5;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-secundario);
+}
+
+.contenedor_instructor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.registro {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #1b0de7;
+}
+
+.registro_nombre {
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: var(--color-principal);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #1070ec;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
